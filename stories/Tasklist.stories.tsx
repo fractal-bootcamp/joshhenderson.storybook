@@ -1,25 +1,25 @@
 import type { Meta, StoryObj } from '@storybook/react'
-import { fn} from "@storybook/test";
-import Task from './Task';
+import { fn } from "@storybook/test";
+import Task from './Tasklist';
 
 const meta: Meta<typeof Task> = {
     component: Task,
     parameters: {
-        backgrounds: {default: 'dark'}
+        backgrounds: { default: 'dark' }
     },
-    argTypes:{
+    argTypes: {
         backgroundColor: { control: 'color' },
-        borderColor: { control: 'color'}
+        borderColor: { control: 'color' }
     },
     title: 'Task',
-    
+
 };
 
 
 export default meta;
 type Story = StoryObj<typeof Task>;
 
-export const Default =  {
+export const Default = {
     args: {
         task: {
             title: 'test',

@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.rounded_sm {
+    border-radius: 0.125rem;
+}
